@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 
 //Declaring the api url that will provide data for the cli ent app
 
-const apiUrl = 'https://telugumovies99.herokuapp.com/movies';
+const apiUrl = 'https://telugumovies99.herokuapp.com/';
 
 @Injectable({
   providedIn: 'root',
