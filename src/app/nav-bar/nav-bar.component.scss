@@ -1,0 +1,30 @@
+#navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #9c7c8e;
+}
+
+.app-title {
+  font-size: 23px;
+  color: #22223b;
+  font-family: "Bebas Neue", Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  border: 1px solid #22223b;
+}
+
+button {
+  margin-top: 5px;
+  border: 1px solid #22223b;
+  width: 100px;
+  font-family: "Bebas Neue", Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 23px;
+}

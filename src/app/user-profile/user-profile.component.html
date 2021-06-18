@@ -1,0 +1,60 @@
+<app-nav-bar></app-nav-bar>
+<div class="body">
+  <div class="user-profile">
+    <mat-card class="profile-info">
+      <mat-card-header>
+        <mat-card-title class="your-info"> Your Profile Info: </mat-card-title>
+      </mat-card-header>
+      <hr />
+      <mat-card-content> Username: {{ user.username }} </mat-card-content>
+      <mat-card-content> Password: ******** </mat-card-content>
+      <mat-card-content> Email: {{ user.email }} </mat-card-content>
+      <mat-card-content>
+        Birthday: {{ user.birthday | date: "MM/dd/yyyy":"UTC" }}
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="profile-buttons">
+          <button
+            class="update-profile"
+            mat-raised-button
+            color="basic"
+            (click)="openUpdateProfileDialog()"
+          >
+            Update Profile
+          </button>
+          <button
+            class="delete-profile"
+            mat-raised-button
+            color="warn"
+            (click)="deleteUser()"
+          >
+            Delete Profile
+          </button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div class="title-container">
+    <mat-card-title class="title">Your Favorite Movies:</mat-card-title>
+  </div>
+  <div class="favorites-container">
+    <div class="favorite-cards">
+      <mat-card *ngFor="let favorite of favorites" style="flex: 1 1 auto">
+        <img src="{{ favorite.imagePath }}" alt="{{ favorite.title }}" />
+        <div class="favorite-title">
+          <mat-card-title>{{ favorite.title }}</mat-card-title>
+        </div>
+        <div class="remove-favorite">
+          <button
+            class="remove-button"
+            mat-raised-button
+            color="warn"
+            (click)="removeFromFavorites(favorite._id)"
+          >
+            Remove From favorites
+          </button>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

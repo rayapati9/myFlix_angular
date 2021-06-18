@@ -1,0 +1,98 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-120deg, green 30%, pink 30%, yellow 40%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+.main-page-container {
+  height: 100%;
+  background-color: blueviolet;
+  text-align: center;
+  color: black;
+}
+
+.wrapper {
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+}
+
+.button-transform {
+  margin: 50px;
+}
+
+.welcome-btn {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.welcome-btn:hover {
+  background-color: yellowgreen;
+}
+
+@keyframes example {
+  from {
+    color: white;
+  }
+  to {
+    color: red;
+  }
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+h1:hover {
+  color: green;
+}
