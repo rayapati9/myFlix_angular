@@ -7,6 +7,12 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./details-dialog.component.scss'],
 })
 export class DetailsDialogComponent implements OnInit {
+   /**
+    * Injects movie title, image and description from the movie-card component for use in movie detail dialog
+    * @param data -object
+    */
+
+
   constructor(
     @Inject(MAT_DIALOG_DATA)
     public data: {

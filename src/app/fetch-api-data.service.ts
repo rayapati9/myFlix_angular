@@ -12,6 +12,11 @@ import { map } from 'rxjs/operators';
 
 const apiUrl = 'https://telugumovies99.herokuapp.com/';
 
+/**
+ * API call to user registration endpoint
+ * @param userDetails - registration details for new user
+ */
+
 @Injectable({
   providedIn: 'root',
 })
@@ -39,7 +44,10 @@ export class UserRegistrationService {
   }
 }
 
-//User Login
+/**
+ * API call to user login endpoint
+ * @param userDetails - login details for existing user
+ */
 @Injectable({
   providedIn: 'root',
 })
@@ -66,7 +74,9 @@ export class UserLoginService {
   }
 }
 
-//Get All Movies
+/**
+ * API call to get all the movies
+ */
 @Injectable({
   providedIn: 'root',
 })
@@ -103,7 +113,9 @@ export class GetAllMoviesService {
   }
 }
 
-//Get One Movie
+/**
+ * API call to get each movie individually
+ */
 @Injectable({
   providedIn: 'root',
 })
@@ -140,7 +152,10 @@ export class GetSingleMovieService {
   }
 }
 
-//Get Director
+/**
+ * API call to get director details
+ * @params name-director name
+ */
 @Injectable({
   providedIn: 'root',
 })
@@ -177,7 +192,10 @@ export class GetDirectorService {
   }
 }
 
-//Get Genre
+/**
+ * API call to get genre details
+ * @params name-genre name
+ */
 @Injectable({
   providedIn: 'root',
 })
@@ -214,7 +232,10 @@ export class GetGenreService {
   }
 }
 
-//Get User
+/**
+ * API call to fetch user account details
+ * @param user - userID
+ */
 @Injectable({
   providedIn: 'root',
 })
@@ -290,7 +311,10 @@ export class GetFavoriteMoviesService {
   }
 }
 
-//Add Favorite Movie
+/**
+ * API call to add movie ID to favourite movies array in user account
+ * @params id - movie ID
+ */
 @Injectable({
   providedIn: 'root',
 })
@@ -328,7 +352,10 @@ export class AddFavoriteMovieService {
   }
 }
 
-//Remove Favorite Movie
+/**
+ * API call to delete movie ID from favourite movies array in user account
+ * @params id - movie ID
+ */
 @Injectable({
   providedIn: 'root',
 })
@@ -366,7 +393,10 @@ export class RemoveFavoriteMovieService {
   }
 }
 
-//Edit User
+/**
+ * API call to update user details
+ * @param userDetails
+ */
 @Injectable({
   providedIn: 'root',
 })
@@ -404,7 +434,10 @@ export class EditUserService {
   }
 }
 
-//Delete User
+/**
+ * API call to delete user account
+ * @params user - user ID
+ */
 @Injectable({
   providedIn: 'root',
 })
