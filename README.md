@@ -1,27 +1,44 @@
-# MyFlixAngularClient
+# myFlix_angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
+myflix_angular is the client-side of a movie database application built using Angular with an existing server-side (REST API) and MongoDB database.
 
-## Development server
+This web application provides users with the access to information about different movies, directors and genres. Users are able to sign up, update personal information, and create a list of their favorite movies.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**See the hosted project [here](https://rayapati9.github.io/myFlix_angular/welcome).**
 
-## Code scaffolding
+View the website built with React [here](https://github.com/rayapati9/myFlix).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+View the back-end REST API database [here](https://github.com/rayapati9/movie_api).
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Quick Start 🚀
 
-## Running unit tests
+### Development server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run the below command for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Running end-to-end tests
+```bash
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
+### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Features
+
+- Allows users to see a list of all movies in the database
+- Allows users to get detailed information about a single movie by movie title
+- Allows users to get detailed information about a genre by genre name
+- Allows users to get detailed information about a director by name
+- Allows new users to create an user account
+- Allows existing users to update their user info or to delete their account
+- Allows existing users to add or remove movies to/from their list of favorites
+
+### Author
+
+[Divya Rayapati](https://rayapati9.github.io/portfolio-website/)
+
+### Version
+
+1.0.0
